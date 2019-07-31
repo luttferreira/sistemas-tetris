@@ -1,0 +1,11 @@
+CREATE TABLE ranking (
+	nome varchar(25) not null default 'Jogador',
+	pontuacao mediumint(8) unsigned not null default 0,
+	nivel  tinyint(2) unsigned not null default 1
+);
+
+INSERT INTO ranking (nome, pontuacao) VALUES ('Jogador1',500);
+INSERT INTO ranking (nome, pontuacao) VALUES ('Jogador2',400);
+INSERT INTO ranking (nome, pontuacao) VALUES ('Jogador3',300);
+INSERT INTO ranking (nome, pontuacao) VALUES ('Jogador4',200);
+INSERT INTO ranking (nome, pontuacao) VALUES ('Jogador5',100);

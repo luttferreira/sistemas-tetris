@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<style>
+			table
+			{
+				border-collapse:collapse;
+			}
+			
+			td
+			{
+				font-size:1px;
+				height:31px;
+				width:43px;
+			}
+			
+			#proximoGuardado
+			{
+				position:absolute;
+				left:500px;
+				top:10px;
+			}
+			
+			#ranking td
+			{
+				font-size:20px;
+				padding:10px;
+			}
+			
+		</style>
+	</head>
+
+	<body onload="consultarRanking()">
+	
+		<div id="tabela">Start</div>
+		<div id="proximoGuardado">Proximo: </div>
+		<div id="nivel">Nivel: 1</div>
+		<div id="pontuacao">Pontos: 0</div>
+		<div id="info"></div>
+		
+		<div id="ranking"></div>
+		
+		<div id="dados"></div>
+		
+		<script src="tetris.js"></script>
+			
+	</body>
+	
+	
+</html>

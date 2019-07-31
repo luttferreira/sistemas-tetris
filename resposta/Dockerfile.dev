@@ -1,0 +1,5 @@
+FROM nginx:alpine
+
+COPY resposta.html /usr/share/nginx/resposta/resposta.html
+COPY resposta.jpg /usr/share/nginx/resposta/resposta.jpg
+COPY resposta.conf /etc/nginx/conf.d/resposta.conf

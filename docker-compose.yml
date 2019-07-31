@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+    db:
+        restart: always
+        build:
+            dockerfile: Dockerfile.dev
+            context: ./db
+        command: --default-authentication-plugin=mysql_native_password
+        environment:
+            MYSQL_ROOT_PASSWORD: MyBestPassword123
+            
+    nginx:
+        restart: always
+        build:
+            dockerfile: Dockerfile.dev
+            context: ./nginx
+        ports:
+            - '80:80'
+            
+    tetris:
+        restart: always
+        build:
+            dockerfile: Dockerfile.dev
+            context: ./tetris
+
+    resposta:
+        build:
+            dockerfile: Dockerfile.dev
+            context: ./resposta

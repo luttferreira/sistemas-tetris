@@ -1,0 +1,11 @@
+FROM richarvey/nginx-php-fpm
+
+COPY tetris.conf /etc/nginx/sites-enabled/tetris.conf
+COPY tetris.html /var/www/html/tetris/tetris.html
+COPY tetris.js /var/www/html/tetris/tetris.js
+
+COPY consultaRanking.conf /etc/nginx/sites-enabled/consultaRanking.conf
+COPY consultaRanking.php /var/www/html/tetris/consultaRanking.php
+
+COPY salvaRecord.conf /etc/nginx/sites-enabled/salvaRecord.conf
+COPY salvaRecord.php /var/www/html/tetris/salvaRecord.php
