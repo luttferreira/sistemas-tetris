@@ -8,7 +8,7 @@
 	$conn = new mysqli($servername, $username, $password, $dbname);
 	// Check connection
 	if ($conn->connect_error) {
-		die("Connection Error...");
+		die("Connection Error");
 	} 
 
 	$sql = "SELECT * FROM ranking ORDER BY pontuacao DESC LIMIT 5";
