@@ -6,7 +6,6 @@ Sistema dockerizado simples com proxy reverso NGinx roteando para duas páginas:
 Para iniciar o sistema, foi feito um arquivo docker-compose.yml que irá subir todos os 4 containers (nginx, db, tetris e resposta) ao se  executar o comando "docker-compose up --build".
 
 # TELA DO JOGO
-_localhost/tetris
 ![Image of tetris demo](https://github.com/luttferreira/sistemas-tetris/blob/master/tetris_demo.jpg)
 
 
