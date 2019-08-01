@@ -9,6 +9,8 @@ services:
         command: --default-authentication-plugin=mysql_native_password
         environment:
             MYSQL_ROOT_PASSWORD: MyBestPassword123
+        volumes:
+            - ./db/database:/var/lib/mysql
             
     nginx:
         restart: always
